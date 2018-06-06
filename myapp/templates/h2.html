@@ -1,0 +1,19 @@
+<html>
+{% if time.day == 1 %}
+ the first day of the week
+
+{% elif time.day == 30 %}
+
+the last day
+{% else %}
+
+middle 
+
+{%endif%}
+
+{% for day in daysweek %}
+
+{{day}} </p>
+
+{% endfor %}
+</html>

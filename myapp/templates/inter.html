@@ -1,0 +1,17 @@
+<html>
+
+
+<form action="/i18n/setlang/"  method="get">
+
+<input name="next"  type="hidden"  value="" />
+
+<select name="languages">
+{% for lang in LANGUAGES %}
+<option value="{{lang.0}}"> {{lang.1}} </option>
+{% endfor %}
+
+
+</select>
+
+
+</html>
